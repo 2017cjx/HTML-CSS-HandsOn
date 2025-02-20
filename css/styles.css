@@ -41,28 +41,118 @@ a {
 /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
 
+.nav{
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link{
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+  opacity: 0.7;
+}
 
 /*-------------------------------------------
   メインビジュアル
   -------------------------------------------*/
-
+.main_visual{
+  width: 100%;
+  height: 640px;
+  border-radius: 16px;
+}
 
 /*-------------------------------------------
   セクション 共通部分
   -------------------------------------------*/
+.sectionTitle{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1px;
+  margin-bottom: 40px;
+}
 
+.a_emphasized{
+  font-weight: bold;
+  font-size: 18px;
+}
 
 /* -------------------------------------------
   プロフィール
   -------------------------------------------*/
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.profileImage{
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 
+.name{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.profile-info{
+  margin: 5px 0;
+}
 
 /* -------------------------------------------
   記事
   -------------------------------------------*/
+.article-section{
+  gap: 40px 16px;
+}
 
+.articles{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  max-width: 1200px;
+  gap: 20px;
+  margin: auto;
+}
+
+.article-card{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.articleImage{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-content{
+  padding: 15px;
+  flex: 1;
+}
 
 /*-------------------------------------------
   フッター
   -------------------------------------------*/
+
+.footer{
+  font-size: small;
+  padding: 40px, 0;
+  text-align: center;
+}
